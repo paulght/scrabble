@@ -22,20 +22,20 @@
 	<stdlib.h>
 	"scrabble.h"
 
-1604652582 c:\users\utilisateur\desktop\scrabble martin\scrabble.h
+1604776428 c:\users\utilisateur\desktop\scrabble martin\scrabble.h
 
-1604771934 source:c:\users\utilisateur\desktop\scrabble martin\placement_de_un_mot.c
+1604775325 source:c:\users\utilisateur\desktop\scrabble martin\placement_de_un_mot.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"scrabble.h"
 
-1604763724 source:c:\users\utilisateur\desktop\scrabble martin\main.c
+1604776502 source:c:\users\utilisateur\desktop\scrabble martin\main.c
 	<stdio.h>
 	<stdlib.h>
 	"scrabble.h"
 
-1604763724 source:c:\users\utilisateur\desktop\scrabble martin\tour_joueur.c
+1604776463 source:c:\users\utilisateur\desktop\scrabble martin\tour_joueur.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>

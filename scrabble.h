@@ -1,24 +1,48 @@
 #ifndef SCRABBLE_H_INCLUDED
 #define SCRABBLE_H_INCLUDED
 
+#define nombreDeJetonsDansPioche 102
+#define nombreDeJetonsDansChevalet 7
+#define nombreMaxDeJetonsDansMot 7
 
+#define nombreMinDeJoueurs 2
+#define nombreMaxDeJoueurs 4
 
-int affichage_grille();
+typedef char grille[16][32];
+typedef char chevalets[nombreMaxDeJoueurs][nombreDeJetonsDansChevalet];
+typedef char mot[nombreMaxDeJetonsDansMot];
 
-void parametre_de_placement_du_mot();
+char pioche[nombreDeJetonsDansPioche];
+chevalets chevaletsDesJoueurs;
 
-int convertisseur_de_colonne();
+// grille
+void creer_grille();
 
-int placement_du_mot();
+void afficher_grille();
 
-typedef struct lettre
-{
-    char letter;
-    int val;
-    int oc;
-}t_lettre;
+void place_une_lettre(char lettre, int ligne, int colonne);
 
-void creation_pioche(t_lettre total[27]);
-int aleatoire(t_lettre total[27]);
+// pioche
+void melanger_pioche();
+
+void piocher_une_lettre(int joueur, int placeSurChevalet);
+
+void retirer_lettre_du_chevalet(char lettre);
+
+void remplir_chevalet();
+
+void lancer_tour_du_joueur(int joueur);
+
+void afficher_chevalet();
+
+// tour_joueur
+
+void jouer_tour();
+
+void recuperer_choix_du_joueur();
+
+void placer_le_mot();
+
+int index_de_la_colonne(char lettreColonne[1]);
 
 #endif // SCRABBLE_H_INCLUDED
